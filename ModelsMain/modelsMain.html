@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3.CSS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    
+    <ul>
+
+        <li>Waterfal</li>
+            <img src="img/Waterfall.jpg" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity">
+            <div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+            <img class="w3-modal-content" src="img/Waterfall.jpg">
+            </div>
+        <li>Iterative</li>
+        <li>Prototyping</li>
+        <li>Spiral</li>
+        <li>V-shape</li>
+        <li>agile</li>
+    </ul>
+
+    <div class="w3-container">
+        <h2>W3.CSS Modal</h2>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+      
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-opacity">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <p>Some text. Some text. Some text.</p>
+                    <p>Some text. Some text. Some text.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
